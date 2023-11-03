@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Axios from "axios";
+import Dashboard from "./Dashboard";
 
 export default function UserRegister() {
   const [id, setId] = useState("");
@@ -37,6 +38,7 @@ export default function UserRegister() {
 
   return (
     <div className="bg-orange-300 min-h-screen">
+            <Dashboard />
       <div className="d-flex justify-content-center align-items-center flex-column">
         <div className="bg-orange-100 rounded-lg shadow p-5 mb-4 w-100">
           <form>

@@ -1,6 +1,7 @@
 import React from 'react';
 import UserList from './UserList';
 import { useNavigate } from 'react-router-dom';
+import Dashboard from './Dashboard';
 
 export default function Users() {
   const navigate = useNavigate();
@@ -10,7 +11,11 @@ export default function Users() {
   };
 
   return (
+    <div>
+
+    <Dashboard />
     <div className="container mt-5">
+      
       <div className="d-flex justify-content-center">
         <button
           type="button"
@@ -41,5 +46,7 @@ export default function Users() {
         </table>
       </div>
     </div>
+    </div>
+
   );
 }
