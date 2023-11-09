@@ -51,7 +51,7 @@ function Login() {
                 navigate('/users');
             } else {
                 setShowSuccessModal('Successful Login! Welcome Owner');
-                navigate('/home');
+                navigate('/ChefMenu');
             }
         } catch (error) {
             if (error.response && error.response.status === 401) {
