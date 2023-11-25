@@ -13,7 +13,7 @@ import {
   Dropdown,
   FormControl
 } from "react-bootstrap";
-import { CartState } from '../Context';
+import { CartState } from '../Reducers/Context';
 
 export default function Dashboard() {
 

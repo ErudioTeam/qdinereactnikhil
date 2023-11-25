@@ -1,5 +1,5 @@
 import { Card, Button } from "react-bootstrap";
-import { CartState } from '../Context';
+import { CartState } from '../Reducers/Context';
 
 
 const SingleProduct = ({ prod }) => {

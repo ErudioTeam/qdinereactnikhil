@@ -1,6 +1,6 @@
 import React from "react";
 import Dashboard from "./Dashboard";
-import { CartState } from '../Context';
+import { CartState } from '../Reducers/Context';
 import { useEffect, useRef, useState } from 'react';
 
 import SingleProduct from "./SingleProduct";

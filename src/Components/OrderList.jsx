@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
+import ChefOrderButton from './ChefOrderButton';
 
 export default function OrderList() {
     const [orderList, setOrderList] = useState([]);
@@ -29,10 +30,11 @@ export default function OrderList() {
         <td className="px-6 py-4">{order.shipping}</td>
         <td className="px-6 py-4">{order.total}</td>
         <td className="px-6 py-4">
-        {/* <div className="btn-group" role="group">
-          <EditUser user={user} />
-          <ViewUser user={user} />
-          </div> */}
+        <div className="btn-group" role="group">
+          <ChefOrderButton order={order} />
+          {/* <EditUser user={user} />
+          <ViewUser user={user} /> */}
+          </div>
         </td>
       </tr>
     ));
